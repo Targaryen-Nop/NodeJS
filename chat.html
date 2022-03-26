@@ -1,0 +1,10 @@
+<main role="main" class="container"> 
+    <h1 class="my-5">Particle physics chatroom</h1> 
+    <ul> {{ #messages }} 
+        <li>{{ text }}</li> {{ /messages }}
+     </ul> 
+     <form method="POST" action="/chat/send" class="form-inline my-5"> 
+        <input type="text" class="form-control mr-sm-2" name="message" placeholder="Your message"> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form> 
+</mai>
